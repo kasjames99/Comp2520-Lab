@@ -14,7 +14,6 @@ const fs = require("fs");
 const { createReadStream, createWriteStream} = require("fs");
 const PNG = require("pngjs").PNG;
 const path = require("path");
-const { pixelGrayscale } = require("./filter");
 
 /**
  * Description: decompress file from given pathIn, write to given pathOut

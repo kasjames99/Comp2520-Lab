@@ -16,8 +16,8 @@ const zipFilePath = path.join(__dirname, "myfile.zip");
 const pathUnzipped = path.join(__dirname, "unzipped");
 const pathProcessed = path.join(__dirname, "processed");
 
-const filterType = 'sepia'
-
+const filterType = process.argv[2];
+//grayscale or sepia
 
 unzip(zipFilePath, pathUnzipped)
 .then(() => {
